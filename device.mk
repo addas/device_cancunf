@@ -22,6 +22,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/userspace_reboot.mk)
 include $(LOCAL_PATH)/configs/properties/vendor_log_tags.mk
 LOCAL_PATH := device/motorola/cancunf
 
+# VNDK
+PRODUCT_TARGET_VNDK_VERSION := 31
+
+# API
+PRODUCT_SHIPPING_API_LEVEL := 30
+
 # A/B
 PRODUCT_PACKAGES += \
     update_engine \
