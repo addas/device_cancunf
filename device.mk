@@ -539,7 +539,7 @@ PRODUCT_PACKAGES += \
     pstore_annotate.sh \
 
 PRODUCT_PACKAGES += \
-    fstab.mt6893 \
+    fstab.mt6855 \
     apanic.rc \
     factory_init.connectivity.common.rc \
     factory_init.connectivity.rc \
@@ -557,8 +557,8 @@ PRODUCT_PACKAGES += \
     init.mmi.sec.rc \
     init.mmi.tcmd.rc \
     init.modem.rc \
-    init.mt6893.rc \
-    init.mt6893.usb.rc \
+    init.mt6855.rc \
+    init.mt6855.usb.rc \
     init.project.rc \
     init.sensor_2_0.rc \
     init_conninfra.rc \
@@ -571,5 +571,5 @@ PRODUCT_PACKAGES += \
     multi_init.rc \
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.mt6893:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.mt6893
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt6855:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.mt6855
 >>>>>>> 595f657... Update device configuration and prebuilt files
