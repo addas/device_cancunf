@@ -224,13 +224,31 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_COPY_OUT_VENDOR := vendor
 
-# Recovery
+
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6855
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 165
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/first_stage_ramdisk/fstab.mt6855
+
+# Pixel Format
+TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
+
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/first_stage_ramdisk/fstab.mt6855
+PRODUCT_COPY_FILES += \
+	$(DEVICE_PATH)/recovery/root/fstab.mt6855:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.mt6855
+
+TARGET_RECOVERY_INITRC := $(DEVICE_PATH)/recovery/root/init.recovery.mt6855.rc
+
+# Use mke2fs to create ext4 images
+TARGET_USES_MKE2FS := true
+
+# RAMDISK
+BOARD_RAMDISK_USE_LZMA := true
+
+
 # System as Root
 BOARD_SUPPRESS_SECURE_ERASE := true
 
