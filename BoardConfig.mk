@@ -235,8 +235,8 @@ BOARD_DYNAMIC_PARTITIONS_SIZE := 6471811072
 BOARD_DYNAMIC_PARTITIONS_FILE_SYSTEM_TYPE := erofs
 
 # Inherit the proprietary files
-include vendor/motorola/cancunf/BoardConfigVendor.mk
-include vendor/motorola/cancunf-motcamera/BoardConfigVendor.mk
+#include vendor/motorola/cancunf/BoardConfigVendor.mk
+#include vendor/motorola/cancunf-motcamera/BoardConfigVendor.mk
 
 # Wifi
 WPA_SUPPLICANT_VERSION := VER_0_8_X
