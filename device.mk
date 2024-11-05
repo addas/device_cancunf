@@ -227,11 +227,11 @@ PRODUCT_PACKAGES += \
     libpcap.vendor
 
 # IMS
-PRODUCT_BOOT_JARS += \
-    mediatek-common \
-    mediatek-framework \
-    mediatek-ims-base \
-    mediatek-ims-oem-plugin
+# PRODUCT_BOOT_JARS += \
+#    mediatek-common \
+#    mediatek-framework \
+#    mediatek-ims-base \
+#    mediatek-ims-oem-plugin
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
