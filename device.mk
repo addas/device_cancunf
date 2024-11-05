@@ -90,7 +90,7 @@ PRODUCT_PACKAGES += \
     libalsautils \
     libaudiopreprocessing \
     libopus.vendor \
-    audioclient-types-aidl-cpp.vendor
+    audioclient-types-aidl-cpp.vendor \
     android.hardware.boot@1.2-service \
     android.hardware.boot@1.2-impl \
     android.hardware.boot@1.2-impl.recovery \
