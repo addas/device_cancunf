@@ -86,20 +86,15 @@ PRODUCT_PACKAGES += \
     audio.usb.default
 
 PRODUCT_PACKAGES += \
-<<<<<<< HEAD
     audio_policy.stub \
     libalsautils \
     libaudiopreprocessing \
     libopus.vendor \
     audioclient-types-aidl-cpp.vendor
     android.hardware.boot@1.2-service \
-    android.hardware.boot@1.2-mtkimpl \
-    android.hardware.boot@1.2-mtkimpl.recovery
-=======
     android.hardware.boot@1.2-impl \
     android.hardware.boot@1.2-impl.recovery \
     android.hardware.boot@1.2-service
->>>>>>> 595f657... Update device configuration and prebuilt files
 
 PRODUCT_PACKAGES_DEBUG += \
     bootctrl \
@@ -147,7 +142,6 @@ TARGET_RECOVERY_DEVICE_MODULES += \
 
 
 PRODUCT_PACKAGES += \
-<<<<<<< HEAD
     BesLoudness \
     DolbyManager \
     MtkInCallService
@@ -505,15 +499,8 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/motorola/cancunf/cancunf-vendor.mk)
-$(call inherit-product, vendor/motorola/cancunf-motcamera/cancunf-motcamera-vendor.mk)
-=======
-    otapreopt_script \
-    cppreopts.sh \
-    update_engine \
-    update_verifier \
-    update_engine_sideload \
-    checkpoint_gc
+#$(call inherit-product, vendor/motorola/cancunf/cancunf-vendor.mk)
+#$(call inherit-product, vendor/motorola/cancunf-motcamera/cancunf-motcamera-vendor.mk)
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
@@ -575,4 +562,3 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6855:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.mt6855
->>>>>>> 595f657... Update device configuration and prebuilt files
